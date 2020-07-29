@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:paddingLeft="20dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="Item Summary"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/viewCartItemsToolbar"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/viewProduct_CartRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewCartItemsToolbar"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:paddingLeft="20dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="Bill Summary"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/viewCartBillToolbar"/>
+
+
+        <include android:id="@+id/viewCart_billDetailCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewCartBillToolbar"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            layout="@layout/custom_billdetail_bookingdeliveryconfirm"/>
+
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:layout_marginVertical="5dp"-->
+<!--            android:layout_below="@id/viewCartBillToolbar"-->
+<!--            android:id="@+id/viewCart_billDetailCard">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingHorizontal="40dp"-->
+<!--                android:paddingVertical="10dp">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/totalItemtxt"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:text="Total Items"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="17dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/viewCart_totalItemCount"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignBaseline="@id/totalItemtxt"-->
+<!--                    android:layout_marginLeft="40dp"-->
+<!--                    android:layout_toRightOf="@id/totalItemtxt"-->
+<!--                    android:text="30"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="17dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/Subtotaltxt"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/totalItemtxt"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:text="Sub Total"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="17dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/viewCart_subTotal"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/viewCart_totalItemCount"-->
+<!--                    android:layout_alignBaseline="@id/Subtotaltxt"-->
+<!--                    android:layout_marginLeft="55dp"-->
+<!--                    android:layout_toRightOf="@id/Subtotaltxt"-->
+<!--                    android:text="5000"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="17dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/Totaltxt"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/Subtotaltxt"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:text="Total"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="17dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/viewCart_Total"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignBaseline="@id/Totaltxt"-->
+<!--                    android:layout_marginLeft="90dp"-->
+
+<!--                    android:layout_toRightOf="@id/Totaltxt"-->
+<!--                    android:text="5000"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="17dp" />-->
+<!--            </RelativeLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_below="@id/viewCart_billDetailCard">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/viewCart_CancelBtn"
+                android:background="@color/colorAccent"
+                android:text="Cancel Order" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/viewCart_ConfirmBtn"
+                android:background="@color/colorPrimary"
+                android:text="Confirm Order" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

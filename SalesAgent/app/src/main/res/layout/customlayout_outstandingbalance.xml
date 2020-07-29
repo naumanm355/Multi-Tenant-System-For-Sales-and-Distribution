@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp"
+    android:orientation="vertical"
+    android:id="@+id/outstandBal_customParent">
+    <!--    <include android:layout_height="wrap_content"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--         layout=""-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/custH_outstnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/custN_outstnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/custH_outstnd"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/custH_outstnd"
+            android:text="Hamza Ali"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/orderIdH_outstnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/custN_outstnd"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/custN_outstnd"
+            android:text="Order Id"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/orderIdV_outstnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/orderIdH_outstnd"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/orderIdH_outstnd"
+            android:text="4545"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:id="@+id/shopH_outstnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/custH_outstnd"
+
+            android:text="Shop"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/shopN_outstnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/shopH_outstnd"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/shopH_outstnd"
+            android:text="Ahmad Grocery "
+            android:textSize="17dp" />
+
+
+
+        <TextView
+            android:id="@+id/totalbalanceH_outstnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopH_outstnd"
+
+            android:text="Total Payment"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/totalbalanceV_outstnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/totalbalanceH_outstnd"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/totalbalanceH_outstnd"
+            android:text="RS.7876"
+            android:textSize="17dp" />
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignBaseline="@id/totalbalanceV_outstnd"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_toRightOf="@id/totalbalanceV_outstnd"-->
+<!--            android:drawableRight="@drawable/ic_arrow_forward_black_24dp" />-->
+
+
+        <TextView
+            android:id="@+id/amountPaidH_outstnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/totalbalanceH_outstnd"
+            android:text="Amount Paid"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/amountPaidV_outstnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/amountPaidH_outstnd"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/amountPaidH_outstnd"
+            android:text="6000"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/amountRemH_outstnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/amountPaidV_outstnd"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/amountPaidV_outstnd"
+            android:text="Remaining"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/amountRemV_outstnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/amountRemH_outstnd"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/amountRemH_outstnd"
+            android:text="1876"
+            android:textSize="17dp" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/deliverconfirmtoolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/colorAccent"-->
+<!--        app:title="Confirm Deliver"-->
+<!--        app:titleTextColor="@color/white" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+     >
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@mipmap/map"-->
+<!--            />-->
+        <FrameLayout
+            android:id="@+id/mapFrameLayout"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+
+            />
+        <include android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/bookingconfirmretailorDetail"
+            layout="@layout/retailerdetail_customitem"
+
+            />
+
+        <include android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/bookingconfirmbillDetail"
+            layout="@layout/custom_billdetail_bookingdeliveryconfirm"
+
+           />
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            >-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="20dp"-->
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Total Items"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:id="@+id/totalItemtxt_confirmbooking_fragment"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Total Items"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_toRightOf="@id/totalItemtxt_confirmbooking_fragment"-->
+<!--                    android:id="@+id/totalItem_confirmbooking_fragment"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Subtotal"-->
+<!--                    android:layout_below="@id/totalItemtxt_confirmbooking_fragment"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--              -->
+<!--                    android:id="@+id/subtotltxt_confirmbooking_fragment"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Total Items"-->
+<!--                    android:layout_marginLeft="50dp"-->
+<!--                    android:layout_toRightOf="@id/subtotltxt_confirmbooking_fragment"-->
+<!--                    android:id="@+id/subtotl_confirmbooking_fragment"-->
+<!--                    android:layout_alignBaseline="@id/subtotltxt_confirmbooking_fragment"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Total"-->
+<!--                    android:layout_below="@id/subtotltxt_confirmbooking_fragment"-->
+<!--                    android:layout_alignParentLeft="true"-->
+
+<!--                    android:id="@+id/totltxt_confirmbooking_fragment"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Total s"-->
+<!--                    android:layout_marginLeft="70dp"-->
+<!--                    android:layout_toRightOf="@id/totltxt_confirmbooking_fragment"-->
+<!--                    android:id="@+id/total_confirmbooking_fragment"-->
+<!--                    android:layout_alignBaseline="@id/totltxt_confirmbooking_fragment"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Total"-->
+<!--                    android:layout_below="@id/totltxt_confirmbooking_fragment"-->
+<!--                    android:layout_alignParentLeft="true"-->
+
+<!--                    android:id="@+id/billmounttxt_confirmbooking_fragment"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Total Payment"-->
+<!--                    android:layout_marginLeft="70dp"-->
+<!--                    android:layout_toRightOf="@id/billmounttxt_confirmbooking_fragment"-->
+<!--                    android:id="@+id/billmount_confirmbooking_fragment"-->
+<!--                    android:layout_alignBaseline="@id/billmounttxt_confirmbooking_fragment"/>-->
+<!--                -->
+<!--            </RelativeLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="confirm Booking"
+            android:id="@+id/confirmBookingBtn"
+            android:background="@color/colorAccent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

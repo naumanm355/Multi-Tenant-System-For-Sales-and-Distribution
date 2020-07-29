@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customdialogdelivery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shop Closed"
+        android:id="@+id/failedAchieve_ShopClosed"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Out of Range"
+        android:id="@+id/failedAchieve_OutOfRange"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not Visited"
+        android:id="@+id/failedAchieve_NotVisited"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+</LinearLayout>

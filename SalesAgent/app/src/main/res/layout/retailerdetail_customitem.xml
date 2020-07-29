@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shopDetailitemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+
+    <!--    app:civ_border_width="2dp"-->
+    <!--    app:civ_border_color="#FF000000"-->
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/shopkeeperImg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        />
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:gravity="center_vertical"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:paddingLeft="10dp">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/shopName"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="kkfn"-->
+
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/shopAddress"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="abnj" />-->
+    <!--    </LinearLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+       >
+
+        <TextView
+            android:id="@+id/shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kkfn"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shopAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopName"
+            android:text="abnj" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ordertypetxt"
+            android:layout_alignBaseline="@id/shopName"
+            android:text="orderType"
+            android:textColor="@color/blue"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:orientation="horizontal" android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_weight="8">-->
+    <!--    <ImageView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:id="@+id/shopkeeperImg"-->
+    <!--        android:background="@color/colorAccent"-->
+    <!--        android:layout_weight="2"/>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--         android:orientation="vertical"-->
+    <!--        android:gravity="center_vertical"-->
+    <!--        android:padding="10dp"-->
+    <!--        android:background="@color/colorPrimary"-->
+    <!--        android:layout_weight="4">-->
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:id="@+id/shopName"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:text="kkfn"/>-->
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:id="@+id/shopAddress"-->
+    <!--            android:text="abnj"/>-->
+    <!--    </LinearLayout>-->
+
+
+    <!--</LinearLayout>-->

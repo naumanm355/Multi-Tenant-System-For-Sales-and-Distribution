@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/addproductCart_itemBtmNV"
+        android:color="@color/white"
+        android:icon="@drawable/ic_add_shopping_cart_black_24dp"
+        android:title="Add Product" />
+
+    <item
+        android:id="@+id/viewproductCart_itemBtmNV"
+        android:color="@color/white"
+        android:icon="@mipmap/viewbookingcarticon"
+        android:title="View Cart" />
+
+
+    <item
+        android:id="@+id/bookingconfirm_itemBtmNV"
+        android:color="@color/white"
+        android:icon="@mipmap/confirmbooking"
+        android:title="Booking" />
+    <item
+        android:id="@+id/bookingfailed_itemBtmNV"
+        android:color="@color/white"
+        android:icon="@mipmap/cancelbookingicon"
+        android:title="Not Booking" />
+
+
+</menu>

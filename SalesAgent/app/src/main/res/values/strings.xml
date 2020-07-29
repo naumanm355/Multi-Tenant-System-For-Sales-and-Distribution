@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string  name="FirstApp">Alert Dialog</string>
+  <string  name="dialogTitle">Alert Dialog</string>
+  <string  name="dialogMsg">Do you want to close application</string>
+  <string name="navigation_drawer_open">Drawer Open</string>
+  <string name="navigation_drawer_close">Drawer Closed</string>
+
+</resources>

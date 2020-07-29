@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="Order Detail"
+    android:icon="@drawable/ic_search_black_24dp"
+    android:id="@+id/orderdetailItemBtm"/>
+
+    <item android:title="Deliver"
+        android:icon="@drawable/avatar_profileimg"
+        android:id="@+id/orderdelivereItemBtm"/>
+
+  >
+    <item android:title="Not Deliver"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:id="@+id/ordernotdelivItemBtm"/>
+
+    <item android:title="Contact"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:id="@+id/ordercontactItemBtm"/>
+</menu>

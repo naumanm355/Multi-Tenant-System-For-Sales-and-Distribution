@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.INTERNET" />
+
+  <application
+      android:allowBackup="true"
+      android:icon="@mipmap/imgfinal"
+      android:label="SalesAgent"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme">
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/google_maps_key" />
+
+    <activity android:name=".LoginActivity"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".MainActivity"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+    <activity android:name=".BookingDeliveryStatus_MainActivity"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+    <activity android:name=".OrderDeliveryMainActivity"
+        android:parentActivityName=".BookingDeliveryStatus_MainActivity"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
+    <activity android:name=".OrderDeliverySuccessActivity"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+
+    <activity android:name=".PaymentMethodsActivity"
+        android:parentActivityName=".OrderDeliverySuccessActivity"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+
+    <activity android:name=".ViewProductActivity"
+        android:parentActivityName=".MainActivity"
+        android:theme="@style/AppTheme"/>
+    <activity android:name=".OrderBooking_MainActivity"
+        android:parentActivityName=".MainActivity"
+        android:theme="@style/AppTheme"/>
+
+<!--    <activity android:name=".ViewBookingCartActivity"-->
+<!--        android:parentActivityName=".AddProduct_BookingActivity"-->
+<!--        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>-->
+
+    <activity android:name=".OutstandingBalanceActivity"
+        android:parentActivityName=".MainActivity"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+
+    <activity android:name=".ReportsActivity"
+        android:parentActivityName=".MainActivity"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+
+    <activity android:name=".OrderDeliveredActivity"
+        android:parentActivityName=".ReportsActivity"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+
+    <activity android:name=".DeliveredOrder_DetailActivity"
+        android:parentActivityName=".OrderDeliveredActivity"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        />
+    <activity android:name=".ActivityCustomers_ReturnOrder"
+        android:parentActivityName=".MainActivity"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        />
+
+<!--return order -->
+    <activity android:name=".ViewBookingCartActivity"
+        android:parentActivityName=".ActivityCustomers_ReturnOrder"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        />
+
+    <activity android:name=".Activity_PayBillAmount"
+        android:parentActivityName=".PaymentMethodsActivity"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        />
+  </application>
+
+</manifest>

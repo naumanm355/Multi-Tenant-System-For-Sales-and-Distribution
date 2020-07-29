@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/deliveredorderitem_mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/orderIdH_deliveredorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Order Id"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/orderIdV_deliveredorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/orderIdH_deliveredorder"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/orderIdH_deliveredorder"
+            android:text="4545"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:id="@+id/orderDateH_deliveredorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderIdH_deliveredorder"
+
+            android:text="Order Date"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/orderDateV_deliveredorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/orderDateH_deliveredorder"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/orderDateH_deliveredorder"
+            android:text="02/11/2017 05:45 PM"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/orderItemH_deliveredorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderDateH_deliveredorder"
+
+            android:text="Total Item"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/orderItemV_deliveredorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/orderItemH_deliveredorder"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/orderItemH_deliveredorder"
+            android:text="20"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:id="@+id/orderPaymentH_deliveredorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/orderItemV_deliveredorder"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/orderItemV_deliveredorder"
+            android:text="Payment"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/orderPaymentV_deliveredorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/orderPaymentH_deliveredorder"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/orderPaymentH_deliveredorder"
+            android:text="6655"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

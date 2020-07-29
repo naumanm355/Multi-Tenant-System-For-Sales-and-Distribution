@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/searchIcon_syncsearchmenu"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="search bar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/syncItem_syncsearchmenu"
+        android:icon="@drawable/ic_cached_black_24dp"
+        android:title="sync"
+        app:showAsAction="always" />
+
+
+</menu>
